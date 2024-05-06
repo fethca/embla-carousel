@@ -2030,6 +2030,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fethcat/embla-carousel-react@workspace:packages/embla-carousel-react":
+  version: 0.0.0-use.local
+  resolution: "@fethcat/embla-carousel-react@workspace:packages/embla-carousel-react"
+  dependencies:
+    "@types/jest": ^29.5.6
+    "@types/react": ^18.0.8
+    "@typescript-eslint/eslint-plugin": ^6.9.0
+    "@typescript-eslint/parser": ^6.9.0
+    embla-carousel: 8.0.4
+    embla-carousel-reactive-utils: 8.0.5
+    eslint: ^8.52.0
+    eslint-config-prettier: ^9.0.0
+    eslint-plugin-prettier: ^4.0.0
+    jest: ^29.5.0
+    jest-environment-jsdom: ^29.5.0
+    prettier: 2.8.8
+    rollup: ^4.1.5
+    ts-jest: ^29.1.1
+    typescript: ^5.2.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0
+  languageName: unknown
+  linkType: soft
+
+"@fethcat/embla-carousel@workspace:packages/embla-carousel":
+  version: 0.0.0-use.local
+  resolution: "@fethcat/embla-carousel@workspace:packages/embla-carousel"
+  dependencies:
+    "@types/jest": ^29.5.6
+    "@typescript-eslint/eslint-plugin": ^6.9.0
+    "@typescript-eslint/parser": ^6.9.0
+    eslint: ^8.52.0
+    eslint-config-prettier: ^9.0.0
+    eslint-plugin-prettier: ^4.0.0
+    jest: ^29.5.0
+    jest-environment-jsdom: ^29.5.0
+    prettier: 2.8.8
+    rollup: ^4.1.5
+    ts-jest: ^29.1.1
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@npm:^2.13.1":
   version: 2.13.1
   resolution: "@gatsbyjs/parcel-namer-relative-to-cwd@npm:2.13.1"
@@ -8222,7 +8265,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"embla-carousel-auto-height@8.0.4, embla-carousel-auto-height@workspace:packages/embla-carousel-auto-height":
+"embla-carousel-auto-height@8.0.5, embla-carousel-auto-height@workspace:packages/embla-carousel-auto-height":
   version: 0.0.0-use.local
   resolution: "embla-carousel-auto-height@workspace:packages/embla-carousel-auto-height"
   dependencies:
@@ -8243,7 +8286,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"embla-carousel-auto-scroll@8.0.4, embla-carousel-auto-scroll@workspace:packages/embla-carousel-auto-scroll":
+"embla-carousel-auto-scroll@8.0.5, embla-carousel-auto-scroll@workspace:packages/embla-carousel-auto-scroll":
   version: 0.0.0-use.local
   resolution: "embla-carousel-auto-scroll@workspace:packages/embla-carousel-auto-scroll"
   dependencies:
@@ -8264,7 +8307,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"embla-carousel-autoplay@8.0.4, embla-carousel-autoplay@workspace:packages/embla-carousel-autoplay":
+"embla-carousel-autoplay@8.0.5, embla-carousel-autoplay@workspace:packages/embla-carousel-autoplay":
   version: 0.0.0-use.local
   resolution: "embla-carousel-autoplay@workspace:packages/embla-carousel-autoplay"
   dependencies:
@@ -8285,7 +8328,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"embla-carousel-class-names@8.0.4, embla-carousel-class-names@workspace:packages/embla-carousel-class-names":
+"embla-carousel-class-names@8.0.5, embla-carousel-class-names@workspace:packages/embla-carousel-class-names":
   version: 0.0.0-use.local
   resolution: "embla-carousel-class-names@workspace:packages/embla-carousel-class-names"
   dependencies:
@@ -8326,10 +8369,10 @@ __metadata:
     babel-plugin-styled-components: ^2.0.2
     codesandbox: ^2.2.3
     embla-carousel: 8.0.4
-    embla-carousel-auto-height: 8.0.4
-    embla-carousel-auto-scroll: 8.0.4
-    embla-carousel-autoplay: 8.0.4
-    embla-carousel-class-names: 8.0.4
+    embla-carousel-auto-height: 8.0.5
+    embla-carousel-auto-scroll: 8.0.5
+    embla-carousel-autoplay: 8.0.5
+    embla-carousel-class-names: 8.0.5
     embla-carousel-react: 8.0.4
     eslint: ^8.52.0
     eslint-config-prettier: ^9.0.0
@@ -8403,8 +8446,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "embla-carousel-playground-solid@workspace:playgrounds/embla-carousel-playground-solid"
   dependencies:
-    embla-carousel-autoplay: 8.0.4
-    embla-carousel-solid: 8.0.4
+    embla-carousel-autoplay: 8.0.5
+    embla-carousel-solid: 8.0.5
     solid-js: ^1.8.0
     vite: ^3.2.10
     vite-plugin-solid: ^2.8.0
@@ -8421,31 +8464,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"embla-carousel-react@8.0.4, embla-carousel-react@workspace:packages/embla-carousel-react":
-  version: 0.0.0-use.local
-  resolution: "embla-carousel-react@workspace:packages/embla-carousel-react"
+"embla-carousel-react@npm:8.0.4":
+  version: 8.0.4
+  resolution: "embla-carousel-react@npm:8.0.4"
   dependencies:
-    "@types/jest": ^29.5.6
-    "@types/react": ^18.0.8
-    "@typescript-eslint/eslint-plugin": ^6.9.0
-    "@typescript-eslint/parser": ^6.9.0
     embla-carousel: 8.0.4
     embla-carousel-reactive-utils: 8.0.4
-    eslint: ^8.52.0
-    eslint-config-prettier: ^9.0.0
-    eslint-plugin-prettier: ^4.0.0
-    jest: ^29.5.0
-    jest-environment-jsdom: ^29.5.0
-    prettier: 2.8.8
-    rollup: ^4.1.5
-    ts-jest: ^29.1.1
-    typescript: ^5.2.2
   peerDependencies:
     react: ^16.8.0 || ^17.0.1 || ^18.0.0
-  languageName: unknown
-  linkType: soft
+  checksum: af0dacb2921da9de63827e1163236ef93945593d5e50ca97689b7075537fcc227644da47da1c9f7f4b7d49e55abd55442ba6bd179a83af1515badb8df76c8d29
+  languageName: node
+  linkType: hard
 
-"embla-carousel-reactive-utils@8.0.4, embla-carousel-reactive-utils@workspace:packages/embla-carousel-reactive-utils":
+"embla-carousel-reactive-utils@8.0.5, embla-carousel-reactive-utils@workspace:packages/embla-carousel-reactive-utils":
   version: 0.0.0-use.local
   resolution: "embla-carousel-reactive-utils@workspace:packages/embla-carousel-reactive-utils"
   dependencies:
@@ -8466,7 +8497,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"embla-carousel-solid@8.0.4, embla-carousel-solid@workspace:packages/embla-carousel-solid":
+"embla-carousel-reactive-utils@npm:8.0.4":
+  version: 8.0.4
+  resolution: "embla-carousel-reactive-utils@npm:8.0.4"
+  peerDependencies:
+    embla-carousel: 8.0.4
+  checksum: de99e0606b7040e58a208da2774d3a269e567f63ae0ccd1d520b4cccd7515a60036d1f9c434563c640e75ed13b58c82e33d21776a155a80d688c63b67c4027ac
+  languageName: node
+  linkType: hard
+
+"embla-carousel-solid@8.0.5, embla-carousel-solid@workspace:packages/embla-carousel-solid":
   version: 0.0.0-use.local
   resolution: "embla-carousel-solid@workspace:packages/embla-carousel-solid"
   dependencies:
@@ -8474,7 +8514,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.9.0
     "@typescript-eslint/parser": ^6.9.0
     embla-carousel: 8.0.4
-    embla-carousel-reactive-utils: 8.0.4
+    embla-carousel-reactive-utils: 8.0.5
     eslint: ^8.52.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^4.0.0
@@ -8498,7 +8538,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.9.0
     "@typescript-eslint/parser": ^6.9.0
     embla-carousel: 8.0.4
-    embla-carousel-reactive-utils: 8.0.4
+    embla-carousel-reactive-utils: 8.0.5
     eslint: ^8.52.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^4.0.0
@@ -8522,7 +8562,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.9.0
     "@typescript-eslint/parser": ^6.9.0
     embla-carousel: 8.0.4
-    embla-carousel-reactive-utils: 8.0.4
+    embla-carousel-reactive-utils: 8.0.5
     eslint: ^8.52.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^4.0.0
@@ -8538,24 +8578,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"embla-carousel@8.0.4, embla-carousel@workspace:packages/embla-carousel":
-  version: 0.0.0-use.local
-  resolution: "embla-carousel@workspace:packages/embla-carousel"
-  dependencies:
-    "@types/jest": ^29.5.6
-    "@typescript-eslint/eslint-plugin": ^6.9.0
-    "@typescript-eslint/parser": ^6.9.0
-    eslint: ^8.52.0
-    eslint-config-prettier: ^9.0.0
-    eslint-plugin-prettier: ^4.0.0
-    jest: ^29.5.0
-    jest-environment-jsdom: ^29.5.0
-    prettier: 2.8.8
-    rollup: ^4.1.5
-    ts-jest: ^29.1.1
-    typescript: ^5.2.2
-  languageName: unknown
-  linkType: soft
+"embla-carousel@npm:8.0.4":
+  version: 8.0.4
+  resolution: "embla-carousel@npm:8.0.4"
+  checksum: c6a05eb5a3de7d64e48a160df60f2baf727b5f023595aab96b4be2851ef8b80b1c6036c5c4f668af24de7233f3fe69716ff846f5a372ae9b48c62486b950bae1
+  languageName: node
+  linkType: hard
 
 "emittery@npm:^0.13.1":
   version: 0.13.1
