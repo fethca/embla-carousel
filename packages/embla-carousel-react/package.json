@@ -27,13 +27,13 @@
     "svelte",
     "solid"
   ],
-  "main": "embla-carousel-react.umd.js",
-  "unpkg": "embla-carousel-react.umd.js",
-  "module": "./esm/embla-carousel-react.esm.js",
+  "main": "@fethcat/embla-carousel-react.umd.js",
+  "unpkg": "@fethcat/embla-carousel-react.umd.js",
+  "module": "./esm/@fethcat/embla-carousel-react.esm.js",
   "types": "index.d.ts",
   "sideEffects": false,
   "files": [
-    "embla-carousel-react*",
+    "@fethcat/embla-carousel-react*",
     "components/**/*",
     "index.d.ts",
     "esm/**/*",
@@ -72,11 +72,11 @@
     ".": {
       "import": {
         "types": "./esm/index.d.ts",
-        "default": "./esm/embla-carousel-react.esm.js"
+        "default": "./esm/@fethcat/embla-carousel-react.esm.js"
       },
       "require": {
         "types": "./cjs/index.d.ts",
-        "default": "./cjs/embla-carousel-react.cjs.js"
+        "default": "./cjs/@fethcat/embla-carousel-react.cjs.js"
       }
     }
   }

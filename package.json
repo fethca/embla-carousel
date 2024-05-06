@@ -19,7 +19,6 @@
     "packages/embla-carousel-solid",
     "packages/embla-carousel-vue",
     "packages/embla-carousel-svelte",
-    "packages/embla-carousel-docs",
     "packages/embla-carousel-autoplay",
     "packages/embla-carousel-auto-scroll",
     "packages/embla-carousel-auto-height",
