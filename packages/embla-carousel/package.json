@@ -2,6 +2,7 @@
   "name": "embla-carousel",
   "version": "8.0.4",
   "author": "David Jerleke",
+  "type": "module",
   "description": "A lightweight carousel library with fluid motion and great swipe precision",
   "repository": {
     "type": "git",
