@@ -1,11 +1,11 @@
-import fs from 'fs'
-import path from 'path'
-import emblaPackageJson from 'embla-carousel/package.json'
-import utilsPackageJson from 'embla-carousel-reactive-utils/package.json'
 import babel from '@rollup/plugin-babel'
-import typescript from '@rollup/plugin-typescript'
 import resolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
+import typescript from '@rollup/plugin-typescript'
+import utilsPackageJson from 'embla-carousel-reactive-utils/package.json'
+import emblaPackageJson from 'embla-carousel/package.json'
+import fs from 'fs'
+import path from 'path'
 
 const FOLDERS = {
   ESM: 'esm',
@@ -15,12 +15,16 @@ const FOLDERS = {
 }
 
 const CONFIG_GLOBALS = {
-  [emblaPackageJson.name]: kebabToPascalCase(emblaPackageJson.name),
-  [utilsPackageJson.name]: kebabToPascalCase(utilsPackageJson.name)
+  [formatName(emblaPackageJson.name)]: kebabToPascalCase(
+    formatName(emblaPackageJson.name)
+  ),
+  [formatName(utilsPackageJson.name)]: kebabToPascalCase(
+    formatName(utilsPackageJson.name)
+  )
 }
 
 const CONFIG_EXTERNAL_MODULES = {
-  moduleDirectories: ['node_modules', utilsPackageJson.name]
+  moduleDirectories: ['node_modules', formatName(utilsPackageJson.name)]
 }
 
 const CONFIG_BABEL = {
@@ -45,9 +49,13 @@ function kebabToPascalCase(string = '') {
 }
 
 function createBuildPath(packageJson, format) {
-  const fileName = `${packageJson.name}.${format}.js`
+  const fileName = `${formatName(packageJson.name)}.${format}.js`
   if (format === 'umd') return path.join(FOLDERS.OUT, fileName)
   return path.join(FOLDERS.OUT, format, fileName)
+}
+
+function formatName(name) {
+  return name.replace('@fethcat/', '')
 }
 
 function createNodeNextSupportForPackage() {
@@ -88,27 +96,33 @@ function createNodeNextSupportForPackage() {
       'solid'
     ],
     files: [
-      `${packageJson.name}*`,
+      `${formatName(packageJson.name)}*`,
       'components/**/*',
       'index.d.ts',
       'esm/**/*',
       'cjs/**/*'
     ],
     sideEffects: false,
-    unpkg: `${packageJson.name}.umd.js`,
-    main: `${packageJson.name}.umd.js`,
-    module: `./${FOLDERS.ESM}/${packageJson.name}.${FOLDERS.ESM}.js`,
+    unpkg: `${formatName(packageJson.name)}.umd.js`,
+    main: `${formatName(packageJson.name)}.umd.js`,
+    module: `./${FOLDERS.ESM}/${formatName(packageJson.name)}.${
+      FOLDERS.ESM
+    }.js`,
     types: 'index.d.ts',
     exports: {
       './package.json': './package.json',
       '.': {
         import: {
           types: `./${FOLDERS.ESM}/index.d.ts`,
-          default: `./${FOLDERS.ESM}/${packageJson.name}.${FOLDERS.ESM}.js`
+          default: `./${FOLDERS.ESM}/${formatName(packageJson.name)}.${
+            FOLDERS.ESM
+          }.js`
         },
         require: {
           types: `./${FOLDERS.CJS}/index.d.ts`,
-          default: `./${FOLDERS.CJS}/${packageJson.name}.${FOLDERS.CJS}.js`
+          default: `./${FOLDERS.CJS}/${formatName(packageJson.name)}.${
+            FOLDERS.CJS
+          }.js`
         }
       }
     }
@@ -117,16 +131,20 @@ function createNodeNextSupportForPackage() {
   const propsToDelete = ['scripts', 'exports', 'main', 'unpkg', 'module']
   propsToDelete.forEach((prop) => delete packageJson[prop])
 
-  const files = [`${packageJson.name}*`, 'components/**/*', 'index.d.ts']
+  const files = [
+    `${formatName(packageJson.name)}*`,
+    'components/**/*',
+    'index.d.ts'
+  ]
   const packageJsonEsm = {
     ...packageJson,
-    module: `${packageJson.name}.${FOLDERS.ESM}.js`,
+    module: `${formatName(packageJson.name)}.${FOLDERS.ESM}.js`,
     files,
     type: 'module'
   }
   const packageJsonCjs = {
     ...packageJson,
-    main: `${packageJson.name}.${FOLDERS.CJS}.js`,
+    main: `${formatName(packageJson.name)}.${FOLDERS.CJS}.js`,
     files,
     type: 'commonjs'
   }
@@ -167,17 +185,18 @@ function createNodeNextSupport() {
 }
 
 export {
-  FOLDERS,
   CONFIG_BABEL,
-  CONFIG_TYPESCRIPT,
-  CONFIG_GLOBALS,
   CONFIG_EXTERNAL_MODULES,
   CONFIG_EXTERNAL_MODULE_SUPPRESS,
+  CONFIG_GLOBALS,
+  CONFIG_TYPESCRIPT,
+  FOLDERS,
   babel,
-  typescript,
+  createBuildPath,
+  createNodeNextSupport,
+  formatName,
+  kebabToPascalCase,
   resolve,
   terser,
-  createBuildPath,
-  kebabToPascalCase,
-  createNodeNextSupport
+  typescript
 }

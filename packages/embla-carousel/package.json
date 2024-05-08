@@ -1,8 +1,8 @@
 {
   "name": "@fethcat/embla-carousel",
-  "version": "8.0.5",
-  "author": "David Jerleke",
+  "version": "8.0.4",
   "type": "module",
+  "author": "David Jerleke",
   "description": "A lightweight carousel library with fluid motion and great swipe precision",
   "repository": {
     "type": "git",
@@ -27,13 +27,13 @@
     "svelte",
     "solid"
   ],
-  "main": "@fethcat/embla-carousel.umd.js",
-  "unpkg": "@fethcat/embla-carousel.umd.js",
-  "module": "./esm/@fethcat/embla-carousel.esm.js",
+  "main": "embla-carousel.umd.js",
+  "unpkg": "embla-carousel.umd.js",
+  "module": "./esm/embla-carousel.esm.js",
   "types": "index.d.ts",
   "sideEffects": false,
   "files": [
-    "@fethcat/embla-carousel*",
+    "embla-carousel*",
     "components/**/*",
     "index.d.ts",
     "esm/**/*",
@@ -64,11 +64,11 @@
     ".": {
       "import": {
         "types": "./esm/index.d.ts",
-        "default": "./esm/@fethcat/embla-carousel.esm.js"
+        "default": "./esm/embla-carousel.esm.js"
       },
       "require": {
         "types": "./cjs/index.d.ts",
-        "default": "./cjs/@fethcat/embla-carousel.cjs.js"
+        "default": "./cjs/embla-carousel.cjs.js"
       }
     }
   }

@@ -1,16 +1,17 @@
-import packageJson from './package.json'
 import {
-  FOLDERS,
   CONFIG_BABEL,
   CONFIG_TYPESCRIPT,
+  FOLDERS,
   babel,
-  typescript,
+  createBuildPath,
+  createNodeNextSupport,
+  formatName,
+  kebabToPascalCase,
   resolve,
   terser,
-  createBuildPath,
-  kebabToPascalCase,
-  createNodeNextSupport
+  typescript
 } from '../../rollup.config'
+import packageJson from './package.json'
 
 export default [
   {
@@ -34,7 +35,7 @@ export default [
         format: FOLDERS.UMD,
         strict: true,
         sourcemap: false,
-        name: kebabToPascalCase(packageJson.name),
+        name: kebabToPascalCase(formatName(packageJson.name)),
         plugins: [terser()]
       }
     ],

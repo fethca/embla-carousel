@@ -1,11 +1,11 @@
-import EmblaCarousel from '../components/EmblaCarousel'
+import EmblaCarousel from '../components/EmblaCarousel.js'
 import { defaultOptions } from '../components/Options'
-import { mockTestElements } from './mocks'
 import {
   FIXTURE_SLIDES_TO_SCROLL_Y_1,
   FIXTURE_SLIDES_TO_SCROLL_Y_2,
   FIXTURE_SLIDES_TO_SCROLL_Y_3
 } from './fixtures/slidesToScroll-vertical.fixture'
+import { mockTestElements } from './mocks'
 
 const FIRST_SNAP_INDEX = 0
 

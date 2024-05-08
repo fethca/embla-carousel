@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "module": "nodenext",
+    "lib": ["dom", "esnext"],
     "esModuleInterop": true,
     "strict": true,
     "declaration": true,
     "declarationDir": "./",
-    "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": ["src/index.ts", "src/components"],

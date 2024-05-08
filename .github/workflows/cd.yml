@@ -1,0 +1,30 @@
+name: Continuous Deployment
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Setup node for npmjs.org as registry
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install 🔧
+        run: yarn install
+
+      - name: Build 🏗️
+        run: yarn build
+
+      - name: NPM PKG Publish 🎉
+        run: yarn workspaces foreach -t --include 'embla-carousel,embla-carousel-react' npm publish --access=public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
