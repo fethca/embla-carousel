@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "nodenext",
+    "lib": ["dom", "esnext"],
     "esModuleInterop": true,
     "strict": true,
     "declaration": true,

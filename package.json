@@ -1,6 +1,6 @@
 {
   "name": "embla-carousel-monorepo",
-  "version": "8.0.5",
+  "version": "8.0.4",
   "private": true,
   "author": "David Jerleke",
   "description": "A lightweight carousel library with fluid motion and great swipe precision",
@@ -19,7 +19,6 @@
     "packages/embla-carousel-solid",
     "packages/embla-carousel-vue",
     "packages/embla-carousel-svelte",
-    "packages/embla-carousel-docs",
     "packages/embla-carousel-autoplay",
     "packages/embla-carousel-auto-scroll",
     "packages/embla-carousel-auto-height",
@@ -66,6 +65,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "2.8.8",
     "rollup": "^4.1.5",
+    "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   },
   "husky": {
@@ -73,5 +73,8 @@
       "pre-push": "npm-run-all format test lint"
     }
   },
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@3.3.1",
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
 }

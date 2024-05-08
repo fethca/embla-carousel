@@ -1,5 +1,5 @@
-import prettierrc from '../../.prettierrc'
 import { Options as PretterOptions } from 'prettier'
+import prettierrc from '../../.prettierrc.cjs'
 
 type LoadPrettierType = {
   prettierConfig: PretterOptions

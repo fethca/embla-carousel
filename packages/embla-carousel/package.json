@@ -1,8 +1,8 @@
 {
   "name": "@fethcat/embla-carousel",
-  "version": "8.0.5",
-  "author": "David Jerleke",
+  "version": "8.0.4",
   "type": "module",
+  "author": "David Jerleke",
   "description": "A lightweight carousel library with fluid motion and great swipe precision",
   "repository": {
     "type": "git",
