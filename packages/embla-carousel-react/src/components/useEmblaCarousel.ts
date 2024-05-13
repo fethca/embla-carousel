@@ -2,12 +2,12 @@ import EmblaCarousel, {
   EmblaCarouselType,
   EmblaOptionsType,
   EmblaPluginType
-} from 'embla-carousel'
+} from '@fethcat/embla-carousel'
 import {
   areOptionsEqual,
   arePluginsEqual,
   canUseDOM
-} from 'embla-carousel-reactive-utils'
+} from '@fethcat/embla-carousel-reactive-utils'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 type EmblaViewportRefType = <ViewportElement extends HTMLElement>(

@@ -1,6 +1,6 @@
 export {
-  canUseDOM,
   areOptionsEqual,
-  sortAndMapPluginToOptions,
-  arePluginsEqual
-} from './components/utils'
+  arePluginsEqual,
+  canUseDOM,
+  sortAndMapPluginToOptions
+} from './components/utils.js'
