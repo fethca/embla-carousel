@@ -174,7 +174,7 @@ function createNodeNextSupportForPackage() {
     /from\s'(.*)';/g,
     (match) => match.replace(/';/g, `.ts';`)
   )
-  fs.writeFileSync(esmTypesFilePath, esmTypesFileWithExtensions)
+  fs.writeFileSync(esmTypesFilePath, esmTypesFile)
 }
 
 function createNodeNextSupport() {
