@@ -1,0 +1,14 @@
+undecided:
+  - embla-carousel-monorepo
+  - "@fethcat/embla-carousel"
+  - embla-carousel-auto-height
+  - embla-carousel-auto-scroll
+  - embla-carousel-autoplay
+  - embla-carousel-class-names
+  - "@fethcat/embla-carousel-react"
+  - "@fethcat/embla-carousel-reactive-utils"
+  - embla-carousel-solid
+  - embla-carousel-svelte
+  - embla-carousel-vue
+  - embla-carousel-playground-react
+  - embla-carousel-playground-solid

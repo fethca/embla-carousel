@@ -1,6 +1,6 @@
 {
   "name": "@fethcat/embla-carousel-reactive-utils",
-  "version": "8.0.4",
+  "version": "8.0.5",
   "type": "module",
   "author": "David Jerleke",
   "description": "Reactive utilities for Embla Carousel",
@@ -60,7 +60,7 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@fethcat/embla-carousel": "8.0.4"
+    "@fethcat/embla-carousel": "8.0.5"
   },
   "exports": {
     "./package.json": "./package.json",
